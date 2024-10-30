@@ -28,12 +28,11 @@
     }
   </script>
   <style>
-   /* styles.css */
-.custom-container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
+    /* styles.css */
+    .custom-container {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 
@@ -41,7 +40,7 @@
   <!-- this is header section  -->
   <header class="">
     <div>
-    
+
   </header>
   <!-- This header section end  -->
 
@@ -96,27 +95,33 @@
             <label for="phone">Phone</label><br>
             <div class="relative">
               <!-- Main input container with selected country code and arrow -->
-              <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 text-gray-600 cursor-pointer" onclick="toggleDropdown()">
-                  <span id="selected-code" class="flex items-center mr-2">
-                      +91
-                      <!-- Arrow icon for dropdown -->
-                      <svg class="ml-1 w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                      </svg>
-                  </span>
-                  <input type="text" placeholder="Enter your mobile number" class="flex-grow outline-none text-gray-700 placeholder-gray-400" />
+              <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 text-gray-600 cursor-pointer"
+                onclick="toggleDropdown()">
+                <span id="selected-code" class="flex items-center mr-2">
+                  +91
+                  <!-- Arrow icon for dropdown -->
+                  <svg class="ml-1 w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <input type="text" placeholder="Enter your mobile number"
+                  class="flex-grow outline-none text-gray-700 placeholder-gray-400" />
               </div>
-          
+
               <!-- Dropdown list of country codes -->
-              <div id="dropdown" class="absolute left-0 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg hidden z-10">
-                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+880')">+880</div>
-                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+1')">+1</div>
-                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+44')">+44</div>
-                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+61')">+61</div>
-                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+81')">+81 Japan</div>
+              <div id="dropdown"
+                class="absolute left-0 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg hidden z-10">
+                <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+880')">+880</div>
+                <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+1')">+1</div>
+                <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+44')">+44</div>
+                <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+61')">+61</div>
+                <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+81')">+81 Japan</div>
               </div>
-          </div>
-          <br>
+            </div>
+            <br>
             <button
               class="w-full mt-4 pb-[11px] bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white py-2 px-10 rounded-lg"
               type="submit">Submit</button>
@@ -273,14 +278,15 @@
       </div>
     </div>
     <!-- top Career options section end -->
-     <!-- Get Certified section start -->
-      <div class="bg-[#F7FAFF] py-2 mb-16">
-        <!-- main div  -->
-        <div class="max-w-5xl mx-auto my-16 px-4 lg:flex items-center gap-16">
-          <!-- left side  -->
-          <div>
-            <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-10">Get Certified</h2>
-          <p class="text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare <br> pharetra leo vestibulum at orci.</p>
+    <!-- Get Certified section start -->
+    <div class="bg-[#F7FAFF] py-2 mb-16">
+      <!-- main div  -->
+      <div class="max-w-5xl mx-auto my-16 px-4 lg:flex items-center gap-16">
+        <!-- left side  -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-10">Get Certified</h2>
+          <p class="text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare <br> pharetra
+            leo vestibulum at orci.</p>
           <!-- box-1 start  -->
           <div class="flex gap-5 items-center bg-[#FFFFFF] p-5 shadow-lg mb-4 rounded-lg">
             <div>
@@ -288,7 +294,8 @@
             </div>
             <div>
               <h2 class="text-xl font-semibold">Official and verifie</h2>
-              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra leo vestibulum at orci.</p>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra
+                leo vestibulum at orci.</p>
             </div>
           </div>
           <!-- box-1 end  -->
@@ -299,7 +306,8 @@
             </div>
             <div>
               <h2 class="text-xl font-semibold">Official and verifie</h2>
-              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra leo vestibulum at orci.</p>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra
+                leo vestibulum at orci.</p>
             </div>
           </div>
           <!-- box-2 end  -->
@@ -310,347 +318,439 @@
             </div>
             <div>
               <h2 class="text-xl font-semibold">Official and verifie</h2>
-              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra leo vestibulum at orci.</p>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra
+                leo vestibulum at orci.</p>
             </div>
           </div>
           <!-- box-3 end  -->
-           <button class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg mt-4">Book Free Class</button>
-          </div>
-          <!-- left side end -->
-          <!-- right side  start -->
-          <div class="relative">
-            <img class="absolute -top-[18px] -left-[30px] z-0" src="asests/dot-image.png" alt="">
-            <img class="w-full h-full bg-[#FFFFFF] p-4 rounded-lg z-10 relative" src="asests/Get-Certified.png" alt="">
-            <img class="absolute -bottom-[50px] -right-[60px] z-0" src="asests/circle.png"  src="asests/circle.png" alt="">
-          </div>
-          <!-- right side  end -->
+          <button
+            class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg mt-4">Book
+            Free Class</button>
+        </div>
+        <!-- left side end -->
+        <!-- right side  start -->
+        <div class="relative">
+          <img class="absolute -top-[18px] -left-[30px] z-0" src="asests/dot-image.png" alt="">
+          <img class="w-full h-full bg-[#FFFFFF] p-4 rounded-lg z-10 relative" src="asests/Get-Certified.png" alt="">
+          <img class="absolute -bottom-[50px] -right-[60px] z-0" src="asests/circle.png" src="asests/circle.png" alt="">
+        </div>
+        <!-- right side  end -->
+      </div>
+    </div>
+    <!-- Get Certified section end  -->
+    <!-- Curriculum Section Start -->
+    <!-- main secton  -->
+    <section>
+      <div class="max-w-5xl mx-auto mb-16">
+        <h2 class="text-[45px] leading-[53px] font-bold text-center">Curriculum of <br> Our Digital Marketing</h2>
+        <p class="text-gray-500 text-center mt-2">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
+          pharetra.</p>
+
+        <!-- Scrollable Tabs -->
+        <div class="flex space-x-4 mt-6 overflow-x-auto border-b scrollbar-hide">
+          <button
+            class="py-2 px-4 font-semibold text-blue-600 border-b-2 border-blue-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('introduction')">Introduction</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('caseStudies')">Case Studies</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('googleAdSense')">Google AdSense</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('seoMastery')">SEO Mastery</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('googleAnalytics')">Google Analytics</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('blogging')">Blogging</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap"
+            onclick="showTabContent('contentMarketing')">Content Marketing</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="introduction" class="tab-content mt-6  bg-white p-6 shadow-lg rounded-lg border-t">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>What is Digital Marketing?</li>
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>Scope of Digital Marketing</li>
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>Requirement of Digital Marketing</li>
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>Latest Trends in Digital Marketing</li>
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>Digital Marketing for Working Professionals</li>
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>Digital Marketing for Small, Medium, and Large
+              Businesses</li>
+            <li class="flex items-center"><span class="text-blue-600 mr-2"><i
+                  class="fas fa-check-circle text-blue-600"></i></span>Job opportunities in Digital Marketing</li>
+          </ul>
+        </div>
+
+        <!-- Other tab contents (Initially hidden) -->
+        <div id="caseStudies" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Case Studies...</p>
+        </div>
+        <div id="googleAdSense" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Google AdSense...</p>
+        </div>
+        <div id="seoMastery" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for SEO Mastery...</p>
+        </div>
+        <div id="googleAnalytics" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Google Analytics...</p>
+        </div>
+        <div id="blogging" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Blogging...</p>
+        </div>
+        <div id="contentMarketing" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Content Marketing...</p>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-10">
+          <button
+            class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg mt-4 text-center">Download
+            Curriculum</button>
         </div>
       </div>
-      <!-- Get Certified section end  -->
-      <!-- Curriculum Section Start -->
-      <!-- main secton  -->
-  <section>
-    <div class="max-w-5xl mx-auto mb-16">
-      <h2 class="text-[45px] leading-[53px] font-bold text-center">Curriculum of <br> Our Digital Marketing</h2>
-      <p class="text-gray-500 text-center mt-2">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
-
-      <!-- Scrollable Tabs -->
-      <div class="flex space-x-4 mt-6 overflow-x-auto border-b scrollbar-hide">
-          <button class="py-2 px-4 font-semibold text-blue-600 border-b-2 border-blue-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('introduction')">Introduction</button>
-          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('caseStudies')">Case Studies</button>
-          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('googleAdSense')">Google AdSense</button>
-          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('seoMastery')">SEO Mastery</button>
-          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('googleAnalytics')">Google Analytics</button>
-          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('blogging')">Blogging</button>
-          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('contentMarketing')">Content Marketing</button>
-      </div>
-
-      <!-- Tab Content -->
-      <div id="introduction" class="tab-content mt-6  bg-white p-6 shadow-lg rounded-lg border-t">
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>What is Digital Marketing?</li>
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Scope of Digital Marketing</li>
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Requirement of Digital Marketing</li>
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Latest Trends in Digital Marketing</li>
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Digital Marketing for Working Professionals</li>
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Digital Marketing for Small, Medium, and Large Businesses</li>
-              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Job opportunities in Digital Marketing</li>
-          </ul>
-      </div>
-
-      <!-- Other tab contents (Initially hidden) -->
-      <div id="caseStudies" class="tab-content hidden mt-6">
-          <p class="text-gray-500">Content for Case Studies...</p>
-      </div>
-      <div id="googleAdSense" class="tab-content hidden mt-6">
-          <p class="text-gray-500">Content for Google AdSense...</p>
-      </div>
-      <div id="seoMastery" class="tab-content hidden mt-6">
-          <p class="text-gray-500">Content for SEO Mastery...</p>
-      </div>
-      <div id="googleAnalytics" class="tab-content hidden mt-6">
-          <p class="text-gray-500">Content for Google Analytics...</p>
-      </div>
-      <div id="blogging" class="tab-content hidden mt-6">
-          <p class="text-gray-500">Content for Blogging...</p>
-      </div>
-      <div id="contentMarketing" class="tab-content hidden mt-6">
-          <p class="text-gray-500">Content for Content Marketing...</p>
-      </div>
-
-      <!-- Button -->
-      <div class="text-center mt-10">
-        <button class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg mt-4 text-center">Download Curriculum</button>
-      </div>
-  </div>
-  </section>
-        <!-- end tab code -->
-      <!-- Curriculum Section End -->
-       <!-- Learn Digital Marketing secton start -->
-       <section class="py-12 bg-[#F7FAFF]">
+    </section>
+    <!-- end tab code -->
+    <!-- Curriculum Section End -->
+    <!-- Learn Digital Marketing secton start -->
+    <section class="py-12 bg-[#F7FAFF]">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-800 mb-2">Why Learn Digital Marketing</h2>
-        <p class="text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.</p>
-    <!-- box main parent -->
+        <p class="text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo
+          vestibulum at orci.</p>
+        <!-- box main parent -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           <!-- box 1 start -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="text-pink-500 mb-4">
-                    <!-- Replace with an icon if you have one -->
-                    <img src="asests/frame.png" alt="">
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Learn From Industry Experts</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim felis.</p>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-pink-500 mb-4">
+              <!-- Replace with an icon if you have one -->
+              <img src="asests/frame.png" alt="">
             </div>
-            <!-- box-1 end  -->
-            <!-- box 2 start -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="text-blue-500 mb-4">
-                    <img src="asests/Frame(1).png" alt="">
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Structured & Latest Curriculum</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim felis.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Learn From Industry Experts</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet
+              porttitor facilisis dignissim felis.</p>
+          </div>
+          <!-- box-1 end  -->
+          <!-- box 2 start -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-500 mb-4">
+              <img src="asests/Frame(1).png" alt="">
             </div>
-            <!-- box-2 end  --> 
-             <!-- box-3  start -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="text-yellow-500 mb-4">
-                    <img src="asests/frame-6.png" alt="">
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Highly-Engaging Live Classes</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim felis.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Structured & Latest Curriculum</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet
+              porttitor facilisis dignissim felis.</p>
+          </div>
+          <!-- box-2 end  -->
+          <!-- box-3  start -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-yellow-500 mb-4">
+              <img src="asests/frame-6.png" alt="">
             </div>
-            <!-- box-3 end  -->
-            <!-- box-4 start  -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="text-green-500 mb-4">
-                    <img src="asests/Frame(2).png" alt="">
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Work on Real Projects</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim felis.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Highly-Engaging Live Classes</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet
+              porttitor facilisis dignissim felis.</p>
+          </div>
+          <!-- box-3 end  -->
+          <!-- box-4 start  -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-green-500 mb-4">
+              <img src="asests/Frame(2).png" alt="">
             </div>
-            <!-- box-4 end  -->
-             <!-- box-5 start -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="text-purple-500 mb-4">
-                    <img src="asests/Frame(3).png" alt="">
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">100% Job Assistance</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim felis.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Work on Real Projects</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet
+              porttitor facilisis dignissim felis.</p>
+          </div>
+          <!-- box-4 end  -->
+          <!-- box-5 start -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <img src="asests/Frame(3).png" alt="">
             </div>
-            <!-- box-5 end  -->
-            <!-- box-6 start  -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="text-orange-500 mb-4">
-                    <img src="asests/Frame(4).png" alt="">
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Get Certification</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor facilisis dignissim felis.</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">100% Job Assistance</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet
+              porttitor facilisis dignissim felis.</p>
+          </div>
+          <!-- box-5 end  -->
+          <!-- box-6 start  -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-orange-500 mb-4">
+              <img src="asests/Frame(4).png" alt="">
             </div>
-            <!-- box-6 end -->
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Get Certification</h3>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet
+              porttitor facilisis dignissim felis.</p>
+          </div>
+          <!-- box-6 end -->
         </div>
-    <!-- button start -->
-    <div class="text-center">
-      <button class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg mt-4">Book Free Class</button>
-    </div>
-    </div>
+        <!-- button start -->
+        <div class="text-center">
+          <button
+            class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg mt-4">Book
+            Free Class</button>
+        </div>
+      </div>
     </section>
     <!-- Learn Digital Marketing secton end -->
 
     <!-- Students Saying section start -->
     <section class="max-w-5xl mx-auto mt-14">
-      <h2 class="text-center text-[45px] leading-[53px] font-bold text-gray-800 mb-2">What Our Students <br> Are Saying!</h2>
-      <p class="text-center text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
-      
+      <h2 class="text-center text-[45px] leading-[53px] font-bold text-gray-800 mb-2">What Our Students <br> Are Saying!
+      </h2>
+      <p class="text-center text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
+        pharetra.</p>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- box-1 start -->
-          <div class="bg-white rounded-lg shadow-lg border-t border-gray-[10px];
+        <div class="bg-white rounded-lg shadow-lg border-t border-gray-[10px];
           ] p-6">
-              <div class="flex items-center mb-4">
-                  <img src="asests/man.png" alt="Matt Cannon" class="w-12 h-12 rounded-full mr-4">
-                  <div>
-                      <h3 class="text-lg font-semibold text-gray-800">Matt Cannon</h3>
-                      <p class="text-sm text-gray-400">September 1, 2023</p>
-                  </div>
-              </div>
-              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi. Sit eu nisl non scelerisque vestibulum pulvinar. Condimentum massa bibendum pretium tincidunt sed vel.</p>
+          <div class="flex items-center mb-4">
+            <img src="asests/man.png" alt="Matt Cannon" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Matt Cannon</h3>
+              <p class="text-sm text-gray-400">September 1, 2023</p>
+            </div>
           </div>
-          <!-- box-1 end  -->
-           <!-- box-2 start -->
-          <div class="bg-white rounded-lg shadow-md border-t border-gray-[10px] p-6">
-              <div class="flex items-center mb-4">
-                  <img src="asests/man-2.png" alt="Matt Cannon" class="w-12 h-12 rounded-full mr-4">
-                  <div>
-                      <h3 class="text-lg font-semibold text-gray-800">Matt Cannon</h3>
-                      <p class="text-sm text-gray-400">September 1, 2023</p>
-                  </div>
-              </div>
-              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi. Sit eu nisl non scelerisque vestibulum pulvinar. Condimentum massa bibendum pretium tincidunt sed vel.</p>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi.
+            Sit eu nisl non scelerisque vestibulum pulvinar. Condimentum massa bibendum pretium tincidunt sed vel.</p>
+        </div>
+        <!-- box-1 end  -->
+        <!-- box-2 start -->
+        <div class="bg-white rounded-lg shadow-md border-t border-gray-[10px] p-6">
+          <div class="flex items-center mb-4">
+            <img src="asests/man-2.png" alt="Matt Cannon" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800">Matt Cannon</h3>
+              <p class="text-sm text-gray-400">September 1, 2023</p>
+            </div>
           </div>
-          <!-- box-2 end  -->
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi.
+            Sit eu nisl non scelerisque vestibulum pulvinar. Condimentum massa bibendum pretium tincidunt sed vel.</p>
+        </div>
+        <!-- box-2 end  -->
       </div>
-  </section>
-  <!-- Students Saying section end -->
-   <!-- Are you ready to Start Your Course Section Start -->
-   <section class="relative max-w-5xl mx-auto py-14 mt-20 bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] rounded-lg">  
-    <div class="absolute top-0 left-0">
-      <img src="asests/image-png.png" alt="">
-    </div>
-    <div class="absolute top-0 right-0">
-      <img src="asests/image-png-2.png" alt="">
-    </div>
-    <h2 class="text-center  text-white text-[45px] leading-[53px] font-bold mb-2">Are You Ready To Start <br> Your Course?</h2>
-    <p class="text-center text-[#FFFFFF] mb-8">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id <br> turpis donec et morbi.</p>
-    <div class="text-center">
-      <button
-      class="w-[250px] pb-[11px] py-2 px-10 text-black bg-white rounded-lg"
-      type="submit">Submit</button>
-    </div>
-   </section>
-   <!-- Are you ready to Start Your Course Section End -->  
+    </section>
+    <!-- Students Saying section end -->
+    <!-- Are you ready to Start Your Course Section Start -->
+    <section class="relative max-w-5xl mx-auto py-14 mt-20 bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] rounded-lg">
+      <div class="absolute top-0 left-0">
+        <img src="asests/image-png.png" alt="">
+      </div>
+      <div class="absolute top-0 right-0">
+        <img src="asests/image-png-2.png" alt="">
+      </div>
+      <h2 class="text-center  text-white text-[45px] leading-[53px] font-bold mb-2">Are You Ready To Start <br> Your
+        Course?</h2>
+      <p class="text-center text-[#FFFFFF] mb-8">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id <br>
+        turpis donec et morbi.</p>
+      <div class="text-center">
+        <button class="w-[250px] pb-[11px] py-2 px-10 text-black bg-white rounded-lg" type="submit">Submit</button>
+      </div>
+    </section>
+    <!-- Are you ready to Start Your Course Section End -->
 
-   <!-- FAQ Section Start -->
-   <section class="max-w-3xl mx-auto mt-14">
-    <div>
-        <h1 class="text-[45px] leading-[53px] font-bold text-center text-gray-800 mb-4">Digital Marketing Course <br> FAQs</h1>
-        <p class="text-center text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+    <!-- FAQ Section Start -->
+    <section class="max-w-3xl mx-auto mt-14">
+      <div>
+        <h1 class="text-[45px] leading-[53px] font-bold text-center text-gray-800 mb-4">Digital Marketing Course <br>
+          FAQs</h1>
+        <p class="text-center text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
+          pharetra.</p>
 
         <!-- FAQ Item 1 -->
         <div class="border rounded-lg overflow-hidden mb-4">
-            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-blue-50 border-b border-blue-200 flex justify-between items-center">
-                What is website development?
-                <span class="text-xl toggle-icon">-</span>
-            </button>
-            <div class="p-4 bg-white text-gray-700 answer">
-                Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
-                Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
-            </div>
+          <button
+            class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-blue-50 border-b border-blue-200 flex justify-between items-center">
+            What is website development?
+            <span class="text-xl toggle-icon">-</span>
+          </button>
+          <div class="p-4 bg-white text-gray-700 answer">
+            Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non
+            suscipit quis sed et mus nisl lacinia massa.
+            Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+          </div>
         </div>
 
         <!-- FAQ Item 2 -->
         <div class="border rounded-lg overflow-hidden mb-4">
-            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
-              What is website development?
-                <span class="text-xl toggle-icon">+</span>
-            </button>
-            <div class="p-4 bg-white text-gray-700 answer hidden">
-              Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
-              Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
-            </div>
+          <button
+            class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
+            What is website development?
+            <span class="text-xl toggle-icon">+</span>
+          </button>
+          <div class="p-4 bg-white text-gray-700 answer hidden">
+            Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non
+            suscipit quis sed et mus nisl lacinia massa.
+            Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+          </div>
         </div>
 
         <!-- FAQ Item 3 -->
         <div class="border rounded-lg overflow-hidden mb-4">
-            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
-              What is website development?
-                <span class="text-xl toggle-icon">+</span>
-            </button>
-            <div class="p-4 bg-white text-gray-700 answer hidden">
-              Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
-              Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
-            </div>
+          <button
+            class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
+            What is website development?
+            <span class="text-xl toggle-icon">+</span>
+          </button>
+          <div class="p-4 bg-white text-gray-700 answer hidden">
+            Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non
+            suscipit quis sed et mus nisl lacinia massa.
+            Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+          </div>
         </div>
 
         <!-- FAQ Item 4 -->
         <div class="border rounded-lg overflow-hidden mb-4">
-            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
-              What is website development?
-                <span class="text-xl toggle-icon">+</span>
-            </button>
-            <div class="p-4 bg-white text-gray-700 answer hidden">
-              Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
-              Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
-            </div>
+          <button
+            class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
+            What is website development?
+            <span class="text-xl toggle-icon">+</span>
+          </button>
+          <div class="p-4 bg-white text-gray-700 answer hidden">
+            Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non
+            suscipit quis sed et mus nisl lacinia massa.
+            Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+          </div>
         </div>
 
         <!-- Button -->
         <div class="text-center mt-8">
-            <button class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300">Book Free Class</button>
+          <button class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg">
+            Book Free Class
+          </button>
         </div>
-    </div>
-</section>
-   <!-- FAQ Section End -->
-   <!-- Top Companies section start  -->
-    <section class="max-w-5xl mx-auto mt-14 text-center">
-    <div>
-      <h2 class="text-4xl leading-[53px] font-bold mb-4">Top Companies Hiring Digital Marketing in India</h2>
-      <div>
-        <img class="h-[102px] mt-8" src="asests/red-bus.png" alt="">
       </div>
-    </div>
+    </section>
+    <!-- FAQ Section End -->
+    <!-- Top Companies section start  -->
+    <section class="max-w-5xl mx-auto mt-14 text-center">
+      <div>
+        <h2 class="text-4xl leading-[53px] font-bold mb-4">Top Companies Hiring Digital Marketing in India</h2>
+        <div>
+          <img class="h-[102px] mt-8" src="asests/red-bus.png" alt="">
+        </div>
+      </div>
     </section>
     <!-- top Companies section end -->
   </main>
   <!-- This main section end  -->
 
-   <!-- java script program  -->
-   <script>
+  <!-- footer section start -->
+  <footer class="bg-[#0A2540] py-8 text-center text-white mt-14">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex justify-center items-center mb-4">
+        <img src="asests/logo_black 2.png" alt="">
+      </div>
+      <p class="text-gray-300 mb-8">
+        Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam <br> duis faucibus blandit. Non
+        suscipit quis sed et mus nisl lacinia massa
+      </p>
+    </div>
+    <hr>
+    <div class="border-t border-gray-600 pt-4">
+      <p class="text-gray-300">
+        All rights reserved by <a href="#" class="underline">WsCube Tech</a>
+      <p id="clock" class="mt-4">12:00:00 AM</p>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section end -->
+  <!-- java script program  -->
+  <script>
     // Function to toggle the dropdown visibility
     function toggleDropdown() {
-        const dropdown = document.getElementById('dropdown');
-        dropdown.classList.toggle('hidden');
+      const dropdown = document.getElementById('dropdown');
+      dropdown.classList.toggle('hidden');
     }
 
     // Function to select a country code and update the display
     function selectCode(code) {
-        document.getElementById('selected-code').innerText = code;
-        document.getElementById('dropdown').classList.add('hidden');
+      document.getElementById('selected-code').innerText = code;
+      document.getElementById('dropdown').classList.add('hidden');
     }
 
     // Close the dropdown if clicked outside
-    window.addEventListener('click', function(e) {
-        const dropdown = document.getElementById('dropdown');
-        const button = dropdown.previousElementSibling;
-        if (!button.contains(e.target) && !dropdown.contains(e.target)) {
-            dropdown.classList.add('hidden');
-        }
+    window.addEventListener('click', function (e) {
+      const dropdown = document.getElementById('dropdown');
+      const button = dropdown.previousElementSibling;
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add('hidden');
+      }
     });
     // tab code
     function showTabContent(tabId) {
-    // Hide all tab content except "introduction" content
-    document.querySelectorAll('.tab-content').forEach(content => {
+      // Hide all tab content except "introduction" content
+      document.querySelectorAll('.tab-content').forEach(content => {
         if (content.id !== 'introduction') {
-            content.classList.add('hidden'); // Hide all except "introduction"
+          content.classList.add('hidden'); // Hide all except "introduction"
         }
-    });
-    
-    // Show selected tab content along with "introduction" content
-    document.getElementById(tabId).classList.remove('hidden');
-    document.getElementById('introduction').classList.remove('hidden'); // Always show "introduction"
-    
-    // Update tab button styles
-    document.querySelectorAll('button').forEach(btn => 
+      });
+
+      // Show selected tab content along with "introduction" content
+      document.getElementById(tabId).classList.remove('hidden');
+      document.getElementById('introduction').classList.remove('hidden'); // Always show "introduction"
+
+      // Update tab button styles
+      document.querySelectorAll('button').forEach(btn =>
         btn.classList.remove('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2')
-    );
-    document.querySelector(`[onclick="showTabContent('${tabId}')"]`).classList.add('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2');
-};
+      );
+      document.querySelector(`[onclick="showTabContent('${tabId}')"]`).classList.add('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2');
+    };
 
-// faq section start 
-const faqButtons = document.querySelectorAll('button');
+    // faq section start 
+    const faqButtons = document.querySelectorAll('button');
 
-faqButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
         const answer = button.nextElementSibling;
         const icon = button.querySelector('.toggle-icon');
 
-        // সকল উত্তর বন্ধ করুন
         document.querySelectorAll('.answer').forEach(item => {
-            if (item !== answer) {
-                item.classList.add('hidden');
-                item.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
-            }
+          if (item !== answer) {
+            item.classList.add('hidden');
+            item.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
+          }
         });
 
-        // বর্তমান উত্তর দেখান/লুকান
         answer.classList.toggle('hidden');
 
-        // "+" এবং "-" চিহ্ন পরিবর্তন
         icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+      });
     });
-});
-// faq section end
+    // faq section end
 
-</script> 
+    // clock code
+    const ShowTime = () => {
+      const date = new Date();
+      let h = date.getHours();
+      let m = date.getMinutes();
+      let s = date.getSeconds();
+      let Session = "AM";
+
+      if (h > 11) {
+        Session = "PM";
+      }
+      if (h > 12) {
+        h = h - 12;
+      }
+      if (h === 0) {
+        h = 12;
+      }
+      h = (h < 10) ? '0' + h : h;
+      m = (m < 10) ? '0' + m : m;
+      s = (s < 10) ? '0' + s : s;
+
+      const time = h + ':' + m + ':' + s + " " + Session;
+      document.getElementById('clock').innerText = time;
+
+    }
+
+    setInterval(ShowTime, 1000);
+
+  </script>
 </body>
 
 </html>
