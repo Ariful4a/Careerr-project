@@ -508,8 +508,78 @@
     </div>
    </section>
    <!-- Are you ready to Start Your Course Section End -->  
-    
-    
+
+   <!-- FAQ Section Start -->
+   <section class="max-w-3xl mx-auto mt-14">
+    <div>
+        <h1 class="text-[45px] leading-[53px] font-bold text-center text-gray-800 mb-4">Digital Marketing Course <br> FAQs</h1>
+        <p class="text-center text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+
+        <!-- FAQ Item 1 -->
+        <div class="border rounded-lg overflow-hidden mb-4">
+            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-blue-50 border-b border-blue-200 flex justify-between items-center">
+                What is website development?
+                <span class="text-xl toggle-icon">-</span>
+            </button>
+            <div class="p-4 bg-white text-gray-700 answer">
+                Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
+                Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="border rounded-lg overflow-hidden mb-4">
+            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
+              What is website development?
+                <span class="text-xl toggle-icon">+</span>
+            </button>
+            <div class="p-4 bg-white text-gray-700 answer hidden">
+              Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
+              Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="border rounded-lg overflow-hidden mb-4">
+            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
+              What is website development?
+                <span class="text-xl toggle-icon">+</span>
+            </button>
+            <div class="p-4 bg-white text-gray-700 answer hidden">
+              Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
+              Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="border rounded-lg overflow-hidden mb-4">
+            <button class="w-full text-left px-4 py-3 text-blue-600 font-medium bg-gray-100 border-b border-gray-200 flex justify-between items-center">
+              What is website development?
+                <span class="text-xl toggle-icon">+</span>
+            </button>
+            <div class="p-4 bg-white text-gray-700 answer hidden">
+              Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam duis faucibus blandit. Non suscipit quis sed et mus nisl lacinia massa.
+              Dignissim in adipiscing amet nisi eu semper augue. Amet dignissim blandit mi amet felis et malesuada.
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-8">
+            <button class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300">Book Free Class</button>
+        </div>
+    </div>
+</section>
+   <!-- FAQ Section End -->
+   <!-- Top Companies section start  -->
+    <section class="max-w-5xl mx-auto mt-14 text-center">
+    <div>
+      <h2 class="text-4xl leading-[53px] font-bold mb-4">Top Companies Hiring Digital Marketing in India</h2>
+      <div>
+        <img class="h-[102px] mt-8" src="asests/red-bus.png" alt="">
+      </div>
+    </div>
+    </section>
+    <!-- top Companies section end -->
   </main>
   <!-- This main section end  -->
 
@@ -553,7 +623,32 @@
         btn.classList.remove('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2')
     );
     document.querySelector(`[onclick="showTabContent('${tabId}')"]`).classList.add('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2');
-}
+};
+
+// faq section start 
+const faqButtons = document.querySelectorAll('button');
+
+faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('.toggle-icon');
+
+        // সকল উত্তর বন্ধ করুন
+        document.querySelectorAll('.answer').forEach(item => {
+            if (item !== answer) {
+                item.classList.add('hidden');
+                item.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
+            }
+        });
+
+        // বর্তমান উত্তর দেখান/লুকান
+        answer.classList.toggle('hidden');
+
+        // "+" এবং "-" চিহ্ন পরিবর্তন
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    });
+});
+// faq section end
 
 </script> 
 </body>
