@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Opportunities</title>
-  <!-- tailwind and daisyUI cdn link  -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- tailwind cdn link  -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- font-awesome cdn link   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -42,21 +41,7 @@
   <!-- this is header section  -->
   <header class="">
     <div>
-      <div class="custom-container navbar bg-base-100">
-        <div class="flex-1">
-          <a><img class="w-[90%] lg:w-full" src="asests/logo_black 1.png" alt=""></a>
-        </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="bg-transparent border-green-600 border-2 text-green-600 py-1"><i
-                  class="fa-brands fa-whatsapp text-lg lg:text-xl"></i>Chat With Us</a></li>
-            <li class="pl-4"><a class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white text-md" href="#">Call
-                Us</a></li>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    
   </header>
   <!-- This header section end  -->
 
@@ -98,20 +83,41 @@
             </div>
           </div>
         </div>
-        <div class="border-gray-300 border-2 rounded-lg p-6 w-[380px] lg:w-[410px] mx-auto lg:mx-0">
+        <div class="shadow-xl rounded-lg p-6 w-[380px] lg:w-[410px] mx-auto lg:mx-0">
           <h1 class="text-lg font-bold">Book Your Free Class Now!</h1>
           <p class="text-gray-600 mt-2 mb-2">2 days of free demo classes without <br>
             paying in advance!</p>
           <form>
             <label class="font-medium" for="name">Name</label><br>
-            <input class="w-full border-2 p-1 mt-2 mb-2 rounded-lg" type="text" id="name"
+            <input class="w-full h-11 border-2 p-1 mt-2 mb-2 rounded-lg" type="text" id="name"
               placeholder="Enter your name"><br>
             <label for="email">Email</label><br>
-            <input class="w-full border-2 p-1 mt-2 mb-2 rounded-lg" type=" email" id="email"
+            <input class="w-full h-11 border-2 p-1 mt-2 mb-2 rounded-lg" type=" email" id="email"
               placeholder="Enter your email"><br>
             <label for="phone">Phone</label><br>
-            <input class="w-full border-2 p-1 mt-2 mb-2 rounded-lg" type=" number" id="phone"
-              placeholder="Enter your phone"><br>
+            <div class="relative">
+              <!-- Main input container with selected country code and arrow -->
+              <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 text-gray-600 cursor-pointer" onclick="toggleDropdown()">
+                  <span id="selected-code" class="flex items-center mr-2">
+                      +91
+                      <!-- Arrow icon for dropdown -->
+                      <svg class="ml-1 w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      </svg>
+                  </span>
+                  <input type="text" placeholder="Enter your mobile number" class="flex-grow outline-none text-gray-700 placeholder-gray-400" />
+              </div>
+          
+              <!-- Dropdown list of country codes -->
+              <div id="dropdown" class="absolute left-0 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg hidden z-10">
+                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+880')">+880</div>
+                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+1')">+1</div>
+                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+44')">+44</div>
+                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+61')">+61</div>
+                  <div class="px-3 py-2 hover:bg-gray-100 cursor-pointer" onclick="selectCode('+81')">+81 Japan</div>
+              </div>
+          </div>
+          <br>
             <button
               class="w-full mt-4 pb-[11px] bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white py-2 px-10 rounded-lg"
               type="submit">Submit</button>
@@ -322,8 +328,125 @@
         </div>
       </div>
       <!-- Get Certified section end  -->
+      <!-- Curriculum Section Start -->
+      <!-- main secton  -->
+  <section>
+    <div class="max-w-5xl mx-auto h-96">
+      <h2 class="text-3xl font-bold text-center">Curriculum of <br> Our Digital Marketing</h2>
+      <p class="text-gray-500 text-center mt-2">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+
+      <!-- Scrollable Tabs -->
+      <div class="flex space-x-4 mt-6 overflow-x-auto border-b scrollbar-hide">
+          <button class="py-2 px-4 font-semibold text-blue-600 border-b-2 border-blue-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('introduction')">Introduction</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('caseStudies')">Case Studies</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('googleAdSense')">Google AdSense</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('seoMastery')">SEO Mastery</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('googleAnalytics')">Google Analytics</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('blogging')">Blogging</button>
+          <button class="py-2 px-4 text-gray-600 focus:outline-none whitespace-nowrap" onclick="showTabContent('contentMarketing')">Content Marketing</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div id="introduction" class="tab-content mt-6  bg-white p-6 shadow-lg rounded-lg border-t">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>What is Digital Marketing?</li>
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Scope of Digital Marketing</li>
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Requirement of Digital Marketing</li>
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Latest Trends in Digital Marketing</li>
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Digital Marketing for Working Professionals</li>
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Digital Marketing for Small, Medium, and Large Businesses</li>
+              <li class="flex items-center"><span class="text-blue-600 mr-2"><i class="fas fa-check-circle text-blue-600"></i></span>Job opportunities in Digital Marketing</li>
+          </ul>
+      </div>
+
+      <!-- Other tab contents (Initially hidden) -->
+      <div id="caseStudies" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Case Studies...</p>
+      </div>
+      <div id="googleAdSense" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Google AdSense...</p>
+      </div>
+      <div id="seoMastery" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for SEO Mastery...</p>
+      </div>
+      <div id="googleAnalytics" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Google Analytics...</p>
+      </div>
+      <div id="blogging" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Blogging...</p>
+      </div>
+      <div id="contentMarketing" class="tab-content hidden mt-6">
+          <p class="text-gray-500">Content for Content Marketing...</p>
+      </div>
+
+      <!-- Download Button -->
+      <div class="text-center mt-6">
+          <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Download Curriculum</button>
+      </div>
+  </div>
+  </section>
+        <!-- end tab code -->
+      <!-- Curriculum Section End -->
   </main>
   <!-- This main section end  -->
+
+   <!-- java script program  -->
+   <script>
+    // Function to toggle the dropdown visibility
+    function toggleDropdown() {
+        const dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('hidden');
+    }
+
+    // Function to select a country code and update the display
+    function selectCode(code) {
+        document.getElementById('selected-code').innerText = code;
+        document.getElementById('dropdown').classList.add('hidden');
+    }
+
+    // Close the dropdown if clicked outside
+    window.addEventListener('click', function(e) {
+        const dropdown = document.getElementById('dropdown');
+        const button = dropdown.previousElementSibling;
+        if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.classList.add('hidden');
+        }
+    });
+    // tab code 
+
+
+    // function showTabContent(tabId) {
+    //         // Hide all tab content
+    //         document.querySelectorAll('.tab-content').forEach(content => content.classList.add('block'));
+    //         document.querySelectorAll('.tab-content').forEach(content => content.classList.add('hidden'));
+    //         // Show selected tab content
+    //         document.getElementById(tabId).classList.remove('hidden');
+    //         // Update tab button styles
+    //         document.querySelectorAll('button').forEach(btn => btn.classList.remove('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2'));
+    //         document.querySelector(`[onclick="showTabContent('${tabId}')"]`).classList.add('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2');
+    //     }
+   
+    function showTabContent(tabId) {
+    // Hide all tab content except "introduction" content
+    document.querySelectorAll('.tab-content').forEach(content => {
+        if (content.id !== 'introduction') {
+            content.classList.add('hidden'); // Hide all except "introduction"
+        }
+    });
+    
+    // Show selected tab content along with "introduction" content
+    document.getElementById(tabId).classList.remove('hidden');
+    document.getElementById('introduction').classList.remove('hidden'); // Always show "introduction"
+    
+    // Update tab button styles
+    document.querySelectorAll('button').forEach(btn => 
+        btn.classList.remove('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2')
+    );
+    document.querySelector(`[onclick="showTabContent('${tabId}')"]`).classList.add('text-blue-600', 'font-semibold', 'border-blue-600', 'border-b-2');
+}
+
+
+</script> 
 </body>
 
 </html>
