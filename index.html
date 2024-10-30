@@ -33,14 +33,60 @@
       max-width: 1170px;
       margin: 0 auto;
     }
+
+       /* Active color styling */
+       .active {
+      color: #1D4ED8; 
+    }
   </style>
 </head>
 
 <body class="font-Inter">
   <!-- this is header section  -->
   <header class="">
-    <div>
-
+    <!-- navbar section start  -->
+      <!-- Navbar Section -->
+  <nav class="">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-2">
+        <img src="asests/logo_black 1.png" alt="">
+      </div>
+      <!-- Menu Button (for mobile) -->
+      <button id="menu-btn" class="text-gray-800 focus:outline-none md:hidden">
+        <!-- Hamburger Icon -->
+        <svg id="menu-open" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close Icon -->
+        <svg id="menu-close" class="w-6 h-6 hidden absolute top-[30px] right-[24px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <!-- Button Section for desktop -->
+   <div class="hidden lg:block">
+    <div id="menu" class="hidden md:flex space-x-4">
+      <a href="#" class="flex items-center border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-100">
+      <img class="w-5 h-5 mr-2" src="asests/whatsup.png" alt="">
+        Chat With Us
+      </a>
+      <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+        Call Us
+      </a>
+    </div>
+   </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden mx-5 flex-col items-center bg-white space-y-4 py-4">
+      <a href="#" class="flex items-center border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-100 mb-5 lg:mb-0 w-48">
+       <img class="w-5 h-5 mr-2" src="asests/whatsup.png" alt="">
+        Chat With Us
+      </a>
+      <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+        Call Us
+      </a>
+    </div>
+  </nav>
   </header>
   <!-- This header section end  -->
 
@@ -81,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="shadow-xl rounded-lg p-6 w-[380px] lg:w-[410px] mx-auto lg:mx-0">
+        <div class="shadow-xl rounded-lg p-6 w-full mx-auto lg:mx-0">
           <h1 class="text-lg font-bold">Book Your Free Class Now!</h1>
           <p class="text-gray-600 mt-2 mb-2">2 days of free demo classes without <br>
             paying in advance!</p>
@@ -95,7 +141,7 @@
             <label for="phone">Phone</label><br>
             <div class="relative">
               <!-- Main input container with selected country code and arrow -->
-              <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 text-gray-600 cursor-pointer"
+              <div class="flex items-center overflow-hidden border border-gray-300 rounded-lg px-3 py-2 text-gray-600 cursor-pointer"
                 onclick="toggleDropdown()">
                 <span id="selected-code" class="flex items-center mr-2">
                   +91
@@ -129,7 +175,6 @@
         </div>
       </div>
     </section>
-
     <!-- hero section end  -->
 
     <!-- count section start -->
@@ -160,92 +205,93 @@
     </section>
     <!-- count section end -->
     <!-- key hihtlight section start -->
-    <div class="bg-gray-50 mt-16 py-12">
-      <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Key Highlights of the Course</h2>
-        <p class="text-gray-600 mb-8">
-          Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Box 1 -->
-          <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
-            <div class="bg-[#E9F8FF] p-5">
-              <img src="asests/paper.png" alt="">
+    <section class="bg-gray-50 mt-16 py-12">
+      <div class="mx-2 lg:mx-0">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Key Highlights of the Course</h2>
+          <p class="text-gray-600 mb-8">
+            Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Box 1 -->
+            <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
+              <div class="bg-[#E9F8FF] p-5">
+                <img src="asests/Paper.png" alt="paper">
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Assignments & <br> Modules tests</h3>
+                <p class="text-gray-600">Test your knowledge</p>
+              </div>
             </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-800">Assignments & <br> Modules tests</h3>
-              <p class="text-gray-600">Test your knowledge</p>
+  
+            <!-- Box 2 -->
+            <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
+              <div class="bg-[#FFF4EF] p-5">
+                <img src="asests/Star.png" alt="Star">
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Industry-recognized Certification</h3>
+                <p class="text-gray-600">Stand out to your professional</p>
+              </div>
+            </div>
+  
+            <!-- Box 3 -->
+            <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
+              <div class="bg-[#FBF0FD] p-5">
+                <img src="asests/Video.png" alt="video">
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Live Classes & <br> Recorded Lectures</h3>
+                <p class="text-gray-600">Best of both worlds of learning</p>
+              </div>
+            </div>
+  
+            <!-- Box 4 -->
+            <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
+              <div class="bg-[#F0FCF6] p-5">
+                <img src="asests/Download.png" alt="Download">
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Downloadable Content</h3>
+                <p class="text-gray-600">With lifetime access</p>
+              </div>
+            </div>
+  
+            <!-- Box 5 -->
+            <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
+              <div class="bg-[#F1F1FC] p-6">
+                <img src="asests/Document.png" alt="Document">
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">6 Industry Level Projects</h3>
+                <p class="text-gray-600">Get practical skills</p>
+              </div>
+            </div>
+  
+            <!-- Box 6 -->
+            <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
+              <div class="bg-[#FDEFEF] p-5">
+                <img class="w-full h-full" src="asests/Chat.png" alt="Chat">
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">4 Live Doubt Clearing Session</h3>
+                <p class="text-gray-600">Gain a clear understanding</p>
+              </div>
             </div>
           </div>
-
-          <!-- Box 2 -->
-          <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
-            <div class="bg-[#FFF4EF] p-5">
-              <img src="asests/star.png" alt="">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-800">Industry-recognized Certification</h3>
-              <p class="text-gray-600">Stand out to your professional</p>
-            </div>
+  
+          <div class="text-center mt-8">
+            <button class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg">
+              Book Free Class
+            </button>
           </div>
-
-          <!-- Box 3 -->
-          <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
-            <div class="bg-[#FBF0FD] p-5">
-              <img src="asests/video.png" alt="">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-800">Live Classes & <br> Recorded Lectures</h3>
-              <p class="text-gray-600">Best of both worlds of learning</p>
-            </div>
-          </div>
-
-          <!-- Box 4 -->
-          <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
-            <div class="bg-[#F0FCF6] p-5">
-              <img src="asests/Download.png" alt="">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-800">Downloadable Content</h3>
-              <p class="text-gray-600">With lifetime access</p>
-            </div>
-          </div>
-
-          <!-- Box 5 -->
-          <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
-            <div class="bg-[#F1F1FC] p-6">
-              <img src="asests/Document.png" alt="">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-800">6 Industry Level Projects</h3>
-              <p class="text-gray-600">Get practical skills</p>
-            </div>
-          </div>
-
-          <!-- Box 6 -->
-          <div class="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4">
-            <div class="bg-[#FDEFEF] p-5">
-              <img class="w-full h-full" src="asests/Chat.png" alt="">
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-800">4 Live Doubt Clearing Session</h3>
-              <p class="text-gray-600">Gain a clear understanding</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-8">
-          <button class="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white px-10 py-3 font-bold rounded-lg">
-            Book Free Class
-          </button>
         </div>
       </div>
-    </div>
-
+    </section>
     <!-- key hihtlight section end -->
     <!-- top Career options section start -->
-    <div class="max-w-5xl mx-auto my-16 px-4">
-      <h2 class="text-[45px] leading-[53px] font-bold text-center text-gray-800 mb-4">Top career options in <br> Digital
+    <div class="max-w-5xl mx-[4px] lg:mx-auto my-16 px-4">
+      <h2 class="text-3xl lg:text-[45px] leading-10 lg:leading-[53px] font-bold text-center text-gray-800 mb-4">Top career options in <br> Digital
         Marketing</h2>
       <p class="text-gray-600 text-center mb-8">
         Lorem ipsum dolor sit amet consectetur. Imperdiet tellus <br> ut ornare pharetra leo vestibulum at orci.
@@ -279,7 +325,7 @@
     </div>
     <!-- top Career options section end -->
     <!-- Get Certified section start -->
-    <div class="bg-[#F7FAFF] py-2 mb-16">
+    <div class="bg-[#F7FAFF] py-2 mb-16 mx-5 lg:mx-0">
       <!-- main div  -->
       <div class="max-w-5xl mx-auto my-16 px-4 lg:flex items-center gap-16">
         <!-- left side  -->
@@ -302,7 +348,7 @@
           <!-- box-2 start  -->
           <div class="flex gap-5 items-center bg-[#FFFFFF] p-5 shadow-lg mb-4 rounded-lg">
             <div>
-              <img class="bg-[#E9F5FF] p-2 rounded-lg" src="asests/Ticket-Star.png" alt="">
+              <img class="bg-[#E9F5FF] p-2 rounded-lg" src="asests/Send.png" alt="">
             </div>
             <div>
               <h2 class="text-xl font-semibold">Official and verifie</h2>
@@ -314,7 +360,7 @@
           <!-- box-3 start  -->
           <div class="flex gap-5 items-center bg-[#FFFFFF] p-5 shadow-lg mb-4 roulded-lg">
             <div>
-              <img class="bg-[#E9F5FF] p-2 rounded-lg" src="asests/Ticket-Star.png" alt="">
+              <img class="bg-[#E9F5FF] p-2 rounded-lg" src="asests/Activity.png" alt="">
             </div>
             <div>
               <h2 class="text-xl font-semibold">Official and verifie</h2>
@@ -329,10 +375,10 @@
         </div>
         <!-- left side end -->
         <!-- right side  start -->
-        <div class="relative">
-          <img class="absolute -top-[18px] -left-[30px] z-0" src="asests/dot-image.png" alt="">
+        <div class="relative mt-12">
+          <img class="absolute -top-[18px] left-[-15px] lg:-left-[30px] z-0" src="asests/dot-image.png" alt="">
           <img class="w-full h-full bg-[#FFFFFF] p-4 rounded-lg z-10 relative" src="asests/Get-Certified.png" alt="">
-          <img class="absolute -bottom-[50px] -right-[60px] z-0" src="asests/circle.png" src="asests/circle.png" alt="">
+          <img class="absolute -bottom-[55px] lg:-bottom-[50px] right-[90px] lg:-right-[60px] z-0" src="asests/circle.png" src="asests/circle.png" alt="">
         </div>
         <!-- right side  end -->
       </div>
@@ -340,9 +386,9 @@
     <!-- Get Certified section end  -->
     <!-- Curriculum Section Start -->
     <!-- main secton  -->
-    <section>
+    <section class="mx-5 lg:mx-0">
       <div class="max-w-5xl mx-auto mb-16">
-        <h2 class="text-[45px] leading-[53px] font-bold text-center">Curriculum of <br> Our Digital Marketing</h2>
+        <h2 class="text-3xl lg:text-[45px] leading-10 lg:leading-[53px] font-bold text-center">Curriculum of <br> Our Digital Marketing</h2>
         <p class="text-gray-500 text-center mt-2">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
           pharetra.</p>
 
@@ -413,14 +459,15 @@
             Curriculum</button>
         </div>
       </div>
+   
     </section>
     <!-- end tab code -->
     <!-- Curriculum Section End -->
     <!-- Learn Digital Marketing secton start -->
     <section class="py-12 bg-[#F7FAFF]">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-gray-800 mb-2">Why Learn Digital Marketing</h2>
-        <p class="text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo
+      <div class="max-w-5xl mx-5 lg:mx-auto">
+        <h2 class="text-3xl text-center lg:text-left font-bold text-gray-800 mb-2">Why Learn Digital Marketing</h2>
+        <p class="text-gray-500 mb-8 text-center lg:text-left">Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo
           vestibulum at orci.</p>
         <!-- box main parent -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -497,8 +544,8 @@
     <!-- Learn Digital Marketing secton end -->
 
     <!-- Students Saying section start -->
-    <section class="max-w-5xl mx-auto mt-14">
-      <h2 class="text-center text-[45px] leading-[53px] font-bold text-gray-800 mb-2">What Our Students <br> Are Saying!
+    <section class="max-w-5xl mx-5 lg:mx-auto mt-14">
+      <h2 class="text-center text-3xl lg:text-[45px] leading-10 lg:leading-[53px] font-bold text-gray-800 mb-2">What Our Students <br> Are Saying!
       </h2>
       <p class="text-center text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
         pharetra.</p>
@@ -535,16 +582,16 @@
     </section>
     <!-- Students Saying section end -->
     <!-- Are you ready to Start Your Course Section Start -->
-    <section class="relative max-w-5xl mx-auto py-14 mt-20 bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] rounded-lg">
-      <div class="absolute top-0 left-0">
-        <img src="asests/image-png.png" alt="">
+    <section class="relative max-w-5xl mx-5 lg:mx-auto py-14 mt-20 bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] rounded-lg">
+      <div class="absolute top-[100px] lg:top-0 left-0">
+        <img class="w-[60%] lg:w-full" src="asests/image-png.png" alt="">
       </div>
-      <div class="absolute top-0 right-0">
-        <img src="asests/image-png-2.png" alt="">
+      <div class="absolute hidden lg:block top-[100px] lg:top-0 -right-[105px] lg:right-0">
+        <img class="w-[60%] lg:w-full" src="asests/image-png-2.png" alt="">
       </div>
-      <h2 class="text-center  text-white text-[45px] leading-[53px] font-bold mb-2">Are You Ready To Start <br> Your
+      <h2 class="text-center text-white text-4xl lg:text-[45px] leading-10 lg:leading-[53px] font-bold mb-2">Are You Ready To Start <br> Your
         Course?</h2>
-      <p class="text-center text-[#FFFFFF] mb-8">Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id <br>
+      <p class="text-center text-[#FFFFFF] mb-8">Lorem ipsum dolor sit amet consectetur. Arcu nisi <br> diam eget id
         turpis donec et morbi.</p>
       <div class="text-center">
         <button class="w-[250px] pb-[11px] py-2 px-10 text-black bg-white rounded-lg" type="submit">Submit</button>
@@ -553,11 +600,11 @@
     <!-- Are you ready to Start Your Course Section End -->
 
     <!-- FAQ Section Start -->
-    <section class="max-w-3xl mx-auto mt-14">
+    <section class="max-w-3xl mx-5 lg:mx-auto mt-14">
       <div>
-        <h1 class="text-[45px] leading-[53px] font-bold text-center text-gray-800 mb-4">Digital Marketing Course <br>
+        <h1 class="text-3xl lg:text-[45px] leading-10 lg:leading-[53px] font-bold text-center text-gray-800 mb-4">Digital Marketing Course <br>
           FAQs</h1>
-        <p class="text-center text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare
+        <p class="text-center text-gray-600 mb-8">Lorem ipsum dolor sit amet consectetur Imperdiet <br> tellus ut ornare
           pharetra.</p>
 
         <!-- FAQ Item 1 -->
@@ -626,9 +673,9 @@
     </section>
     <!-- FAQ Section End -->
     <!-- Top Companies section start  -->
-    <section class="max-w-5xl mx-auto mt-14 text-center">
+    <section class="max-w-5xl mx-5 lg:mx-auto mt-14 text-center">
       <div>
-        <h2 class="text-4xl leading-[53px] font-bold mb-4">Top Companies Hiring Digital Marketing in India</h2>
+        <h2 class="text-3xl lg:text-4xl leading-10 lg:leading-[53px] font-bold mb-4">Top Companies Hiring Digital Marketing in India</h2>
         <div>
           <img class="h-[102px] mt-8" src="asests/red-bus.png" alt="">
         </div>
@@ -645,8 +692,8 @@
         <img src="asests/logo_black 2.png" alt="">
       </div>
       <p class="text-gray-300 mb-8">
-        Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus non fermentum quam <br> duis faucibus blandit. Non
-        suscipit quis sed et mus nisl lacinia massa
+        Lorem ipsum dolor sit amet consectetur. Mattis id rhoncus  <br> non fermentum quam duis faucibus blandit. Non
+        suscipit <br> quis sed et mus nisl lacinia massa
       </p>
     </div>
     <hr>
@@ -721,6 +768,25 @@
       });
     });
     // faq section end
+  //  JavaScript for Hamburger Toggle 
+  const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpenIcon = document.getElementById('menu-open');
+    const menuCloseIcon = document.getElementById('menu-close');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuOpenIcon.classList.toggle('hidden');
+      menuCloseIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on clicking any item
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuOpenIcon.classList.remove('hidden');
+      menuCloseIcon.classList.add('hidden');
+    });
 
     // clock code
     const ShowTime = () => {
@@ -754,3 +820,4 @@
 </body>
 
 </html>
+

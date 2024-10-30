@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Curriculum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+  <div class="max-w-5xl mx-auto h-[4400px]">
+    <h2 class="text-[45px] leading-[53px] font-semibold text-center mb-4">Curriculum of <br>Our Digital Marketing</h2>
+    <p class="text-gray-500 text-center mb-6">Lorem ipsum dolor sit amet consectetur imperdiet tellus ut ornare pharetra.</p>
+
+    <!-- Tabs -->
+    <div class="flex justify-center border-b border-gray-200 mb-6">
+      <button class="tab-btn text-blue-600 font-medium border-b-2 border-blue-600 px-4 py-2 focus:outline-none" onclick="openTab('introduction')">Introduction</button>
+      <button class="tab-btn text-gray-600 font-medium px-4 py-2 focus:outline-none" onclick="openTab('case-studies')">Case Studies</button>
+      <button class="tab-btn text-gray-600 font-medium px-4 py-2 focus:outline-none" onclick="openTab('google-adsense')">Google AdSense</button>
+      <button class="tab-btn text-gray-600 font-medium px-4 py-2 focus:outline-none" onclick="openTab('seo-mastery')">SEO Mastery</button>
+      <button class="tab-btn text-gray-600 font-medium px-4 py-2 focus:outline-none" onclick="openTab('google-analytics')">Google Analytics</button>
+      <button class="tab-btn text-gray-600 font-medium px-4 py-2 focus:outline-none" onclick="openTab('blogging')">Blogging</button>
+      <button class="tab-btn text-gray-600 font-medium px-4 py-2 focus:outline-none" onclick="openTab('affiliate-marketing')">Affiliate Marketing</button>
+    </div>
+
+    <!-- Content for each tab -->
+    <div id="introduction" class="tab-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>What is Digital Marketing?</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>Scope of Digital Marketing</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>Requirement of Digital Marketing</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>Latest Trends in Digital Marketing</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>Digital Marketing for Working Professionals</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>Digital Marketing for Small, Medium, and Large Businesses</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-blue-600"><i
+            class="fas fa-check-circle text-blue-600"></i></span>
+          <p>Job opportunities in Digital Marketing</p>
+        </div>
+      </div>
+    <div class="text-center">
+        <button class="bg-blue-600 text-white rounded-lg pb-[11px] py-2 px-4">Download Curriculum</button>
+    </div>
+    </div>
+
+    <div id="case-studies" class="tab-content hidden">
+      <div class="text-gray-700">
+        <p>Case Studies on various digital marketing success stories and analysis.</p>
+        <p>Learn from real-world examples to understand effective strategies.</p>
+      </div>
+    </div>
+
+    <div id="google-adsense" class="tab-content hidden">
+      <div class="text-gray-700">
+        <p>Overview of Google AdSense and its monetization methods.</p>
+        <p>Step-by-step guide on how to set up AdSense for websites.</p>
+      </div>
+    </div>
+
+    <div id="seo-mastery" class="tab-content hidden">
+      <div class="text-gray-700">
+        <p>Master SEO fundamentals, on-page, off-page SEO, and technical SEO.</p>
+        <p>Understand search engine algorithms and optimize content effectively.</p>
+      </div>
+    </div>
+
+    <div id="google-analytics" class="tab-content hidden">
+      <div class="text-gray-700">
+        <p>Introduction to Google Analytics and tracking metrics for websites.</p>
+        <p>Learn how to analyze visitor data and improve site performance.</p>
+      </div>
+    </div>
+
+    <div id="blogging" class="tab-content hidden">
+      <div class="text-gray-700">
+        <p>Comprehensive guide on content creation, audience targeting, and growth.</p>
+        <p>Techniques to create engaging blog posts and attract traffic.</p>
+      </div>
+    </div>
+
+    <div id="affiliate-marketing" class="tab-content hidden">
+      <div class="text-gray-700">
+        <p>Introduction to affiliate marketing, strategies, and profit models.</p>
+        <p>Learn how to select affiliate products and maximize earnings.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function openTab(tabId) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => content.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      const tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => {
+        tab.classList.remove('text-blue-600', 'border-blue-600');
+        tab.classList.add('text-gray-600');
+      });
+      event.currentTarget.classList.add('text-blue-600', 'border-blue-600');
+      event.currentTarget.classList.remove('text-gray-600');
+    }
+  </script>
+</body>
+</html>

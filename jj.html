@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Buttons</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Active color styling */
+    .active {
+      color: #1D4ED8; /* Tailwind's blue-600 */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar Section -->
+  <nav class="fixed w-full">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-2">
+        <img src="asests/logo_black 1.png" alt="">
+      </div>
+      <!-- Menu Button (for mobile) -->
+      <button id="menu-btn" class="text-gray-800 focus:outline-none md:hidden">
+        <!-- Hamburger Icon -->
+        <svg id="menu-open" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close Icon -->
+        <svg id="menu-close" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <!-- Button Section for desktop -->
+      <div id="menu" class="hidden md:flex space-x-4">
+        <a href="#" class="flex items-center border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-100">
+          <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.426 15.572l-3.131-1.566a2.002 2.002 0 0 0-2.45.29l-1.563 1.27c-2.487-1.19-4.49-3.19-5.687-5.68l1.273-1.563a2.002 2.002 0 0 0 .288-2.451L8.428 2.572A2.003 2.003 0 0 0 6.625 2H3A2.003 2.003 0 0 0 1 4.003C1 13.472 8.531 21 17.998 21A2.002 2.002 0 0 0 20 19.002v-3.63c0-.754-.426-1.444-1.074-1.8z"/>
+          </svg>
+          Chat With Us
+        </a>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+          Call Us
+        </a>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden flex-col items-center bg-white space-y-4 py-4">
+      <a href="#" class="flex items-center border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-100">
+        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21.426 15.572l-3.131-1.566a2.002 2.002 0 0 0-2.45.29l-1.563 1.27c-2.487-1.19-4.49-3.19-5.687-5.68l1.273-1.563a2.002 2.002 0 0 0 .288-2.451L8.428 2.572A2.003 2.003 0 0 0 6.625 2H3A2.003 2.003 0 0 0 1 4.003C1 13.472 8.531 21 17.998 21A2.002 2.002 0 0 0 20 19.002v-3.63c0-.754-.426-1.444-1.074-1.8z"/>
+        </svg>
+        Chat With Us
+      </a>
+      <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+        Call Us
+      </a>
+    </div>
+  </nav>
+
+  <!-- JavaScript for Hamburger Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpenIcon = document.getElementById('menu-open');
+    const menuCloseIcon = document.getElementById('menu-close');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuOpenIcon.classList.toggle('hidden');
+      menuCloseIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on clicking any item
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuOpenIcon.classList.remove('hidden');
+      menuCloseIcon.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
